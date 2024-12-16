@@ -1,0 +1,120 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+.parent
+{
+    width: 100%;
+    height: 694px;
+    background-color: rgb(91, 190, 172);
+    display: flex;                                  /* By default it takes a row */
+    flex-wrap: wrap;
+    
+    /* flex-direction:column; */
+    /* flex-direction: column-reverse;  */         /* you can adjust the sequence(column,row etc) of your element by using this attributes */
+    
+    /* justify-content: center; */                  /* justify-content is for main axix like here x(row) is main axix */
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */
+    /* justify-content: space-evenly;                         */
+    /* align-items: center;                            align-items is for other axix like here y(column) is ther axix */
+
+    column-gap: 10%;                               /* justify-content can never given a gap when the parents body is full with block */
+
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* align-content: space-around; */
+    row-gap: 10%;
+}
+
+.item
+{
+    width: 20%;
+    height: 250px;
+    border: 2px inset black ;              /* border may be solid, dashed, dotted, groove, inset, outset or mixed */
+    box-shadow: 1px 2px 20px black;
+}
+.first
+{
+    background-color: red;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.block, .block5
+{
+    width: 50px;
+    height: 50px;
+    border: 2px inset black ;
+    box-shadow: 1px 1px 5px black;
+    background-color: yellow;
+}
+.second
+{
+    background-color: yellow;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+.block1, .block3                            /* u can use one or more element like this ','when both have the same properties */
+{
+    width: 50px;
+    height: 50px;
+    border: 2px inset black ;
+    box-shadow: 1px 1px 5px black;
+    background-color: rgb(249, 107, 6);
+}
+.third
+{
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.block2
+{
+    width: 50px;
+    height: 50px;
+    border: 2px inset black ;
+    box-shadow: 1px 1px 5px black;
+    background-color: rgb(3, 3, 3);
+}
+.forth
+{
+    background-color: green;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+/* .block3
+{
+    width: 50px;
+    height: 50px;
+    border: 2px inset black ;
+    box-shadow: 1px 1px 5px black;
+    background-color: rgb(249, 107, 6);
+} */
+.block4
+{
+    width: 50px;
+    height: 50px;
+    border: 2px inset black ;
+    box-shadow: 1px 1px 5px black;
+    background-color: rgb(59, 249, 6);
+}
+/* .block5
+{
+    width: 50px;
+    height: 50px;
+    border: 2px inset black ;
+    box-shadow: 1px 1px 5px black;
+    background-color: rgb(198, 240, 14);
+} */
